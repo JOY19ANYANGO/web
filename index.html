@@ -1,83 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorry for Pranking You</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    p {
-      color: #555;
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-    .pleading-gif, .happy-gif {
-      max-width: 100%;
-      height: 500px;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    .happy-gif {
-      display: none;
-    }
-    button {
-      padding: 12px 24px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Sorry for Pranking You</h1>
-    <div id="happyGif" style="display:none;">
-      <iframe src="https://giphy.com/embed/l4pTfx2qLszoacZRS" width="100%" height="100%" style="max-width: 500px; height: 500px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
-    <p><a href="https://giphy.com/gifs/sherlockgnomes-sherlock-l4pTfx2qLszoacZRS">via GIPHY</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-    <iframe class="pleading-gif" src="https://gifer.com/embed/2r61" width="100%" height="auto" frameBorder="0" allowFullScreen></iframe>
-    <p><a href="https://gifer.com">via GIFER</a></p>
-    
-    <p>hey  there I'm sorry for pranking you I am still here with 
-  you my love 😭😭😂😂</p>
-    <button onclick="showHappyGif()">Accept Apology</button>
-  </div>
-
-  <script>
-    function showHappyGif() {
-      var happyGif = document.getElementById('happyGif');
-      var pleadingGif = document.querySelector('.pleading-gif');
-      pleadingGif.style.display = 'none';
-      happyGif.style.display = 'block';
-    }
-  </script>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
